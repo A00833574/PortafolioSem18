@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #1a2d5a; /* Fondo general de la página en azul oscuro */
+}
+
+header, section, footer {
+    padding: 20px;
+    margin: 10px;
+    background: #0e1e3f; /* Fondo de secciones en un azul más intenso */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para dar profundidad */
+}
+
+h1, h2, h3 {
+    color: #00aaff; /* Color azul claro para títulos */
+}
+
+a {
+    color: #00ddff; /* Color más brillante para enlaces para un contraste efectivo */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+a:hover {
+    text-decoration: underline; /* Subraya los enlaces al pasar el mouse para una mejor interacción */
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #cccccc; /* Color gris claro para el texto del pie de página */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.carousel {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.carousel-images img {
+    width: 100%;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-images img.active {
+    display: block;
+    opacity: 1;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #3b3b3b;
+    color: #ffffff;
+    opacity: 0.5;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.prev {
+    left: 0px;
+}
+
+.next {
+    right: 0px;
+}
